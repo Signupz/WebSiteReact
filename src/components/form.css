@@ -7,7 +7,10 @@ form {
 
 #formContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 20px 25px rgb(134, 134, 134);
 }
 
 #contacttitle {
@@ -101,11 +104,14 @@ form {
     transition: 0.3s;
 }
 
-@media(max-width:800px) {
+@media only screen and (max-width:768px){
 
     #formContainer {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 13vh;
     }
 
     #contacttitle {
@@ -116,7 +122,7 @@ form {
 
     #phoneNumberEmailAdress {
         font-size: 1em;
-        margin: 3vh 10vh;
+        margin: 3vh;
     }
 
     .RS {
@@ -125,5 +131,16 @@ form {
         margin: 3vh 10vh;
         font-size: 2.3em;
     }
+}
 
+@media only screen and (max-width:460px) {
+    #formContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 13vh;
+        box-shadow: none;
+        transition: 0.3s;
+    }
 }

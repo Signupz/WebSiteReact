@@ -3,8 +3,8 @@ import "./form.css";
 
 export default function form() {
   return (
-    <div className="container" id="formContainer">
-        <div class="shadow p-3 mb-5 bg-white rounded">
+    <div className="container" >
+        <div class=" p-3 mb-5 bg-white rounded" id="formContainer">
           <form>
             <h2 id="contacttitle">Me contacter</h2>
             <p id="phoneNumberEmailAdress">

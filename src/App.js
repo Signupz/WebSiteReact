@@ -27,7 +27,7 @@ function App() {
                 <NavbarTest />
               </div>
               <div className="col">
-              <About />
+              <Form />
               </div>
             </div>
           </div>
