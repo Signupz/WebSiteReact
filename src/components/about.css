@@ -1,0 +1,59 @@
+body {
+  max-width: 100vw;
+}
+
+#aboutContainer {
+  display: flex;
+  align-items: center;
+  width: 60vw;
+  margin-top: 4% ;
+}
+
+#wildcodeschoollink {
+  color: rgb(#00acee);
+}
+
+#shibuyapic {
+  width: 45%;
+  margin-right: 50px;
+  margin-left: 20px;
+  float: left;
+  margin-bottom: 5px;
+  box-shadow: 7px 7px 10px #aaa;
+  transition: 0.2s;
+}
+
+div.col {
+  margin : 0px;
+  padding: 0px;
+}
+
+#textabout {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.95;
+  text-align: justify;
+}
+
+@media only screen and (max-width:500px){
+
+  #aboutContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 4% ;
+    width: 90vw;
+    padding: 0px;
+  }
+
+  #shibuyapic {
+    width: 90vw;
+    margin: 0 0 4vh 0;
+    z-index: 1;
+  }
+
+  #textabout {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.95;
+    text-align: justify;
+    font-size: 1.1em;
+  }
+}

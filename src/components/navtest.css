@@ -1,0 +1,66 @@
+.navT {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 2% 6%;
+  font-size: 1.6vw;
+}
+
+li a:hover {
+  color: #00acee;
+  transition: 0.3s;
+}
+
+li a {
+  color: rgb(51, 51, 51);
+  transition: 0.3s;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu.show {
+  margin: 0 5%;
+  transition: 0.2s;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
+  transition: 0.2s;
+  text-shadow: 1px 1px 1px rgba(94, 94, 94, 0.562);
+  margin: 5px 0;
+}
+
+.nav-link:hover {
+  color: #00acee;
+  text-shadow: none;
+  transition: 0.2s;
+}
+
+@media(max-width:768px) {
+  .nav-link {
+    color: rgb(0, 0, 0);
+    transition: 0.2s;
+    text-shadow: 1px 1px 1px rgba(94, 94, 94, 0.562);
+    margin: 5px;
+    font-size: 5em;
+    width: 80vw;
+  }
+
+  li.nav-item {
+    text-align: right;
+  }
+  
+  li a:hover {
+    color: #00acee;
+    transition: 0.3s;
+  }
+
+  .navbar-light .navbar-toggler {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    background-color: white;
+  }
+}

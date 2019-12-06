@@ -1,0 +1,129 @@
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+}
+
+#formContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#contacttitle {
+    font-size: 2em;
+    color: #307df6;
+    margin: 3vh 10vh;
+    text-shadow: 0px 2px 3px rgba(161, 161, 161, 0.562);
+}
+
+#phoneNumberEmailAdress {
+    font-size: 2.3vw;
+    margin: 3vh 10vh;
+    text-shadow: 0px 2px 3px rgba(94, 94, 94, 0.562);
+}
+
+.RS {
+    display: flex;
+    justify-content: center;
+    margin: 3vh 10vh;
+    font-size: 3em;
+    text-shadow: 0px 2px 3px rgba(94, 94, 94, 0.562);
+}
+  
+.fa-twitter {
+    margin-right: 4vh;
+    color: #00acee;
+    transition: 0.3s;
+}
+
+.fa-twitter:hover {
+    margin-right: 4vh;
+    transform: scale(1.3);
+    color: #00acee;
+    transition: 0.3s;
+}
+
+.fa-instagram {
+    content: "\f16d";
+    margin-right: 4vh;
+    color: #8a3ab9;
+    transition: 0.3s;
+}
+
+.fa-instagram:hover {
+    content: "\f16d";
+    margin-right: 4vh;
+    transform: scale(1.3);
+    color: #8a3ab9;
+    transition: 0.3s;
+}
+
+.fa-facebook-square {
+    content: "\f16d";
+    margin-right: 4vh;
+    color: #3b5998;
+    transition: 0.3s;
+}
+
+.fa-facebook-square:hover {
+    content: "\f16d";
+    margin-right: 4vh;
+    transform: scale(1.3);
+    color: #3b5998;
+    transition: 0.3s;
+}
+
+.fa-github {
+    content: "\f09b";
+    margin-right: 4vh;
+    color: rgb(56, 56, 56);
+    transition: 0.3s;
+}
+
+.fa-github:hover {
+    content: "\f09b";
+    margin-right: 4vh;
+    transform: scale(1.3);
+    color: rgb(56, 56, 56);
+}
+
+.fa-linkedin-square {
+    content: "\f08c";
+    color: #0e76a8;
+    transition: 0.3s;
+}
+
+.fa-linkedin-square:hover {
+    content: "\f08c";
+    color: #0e76a8;
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+@media(max-width:800px) {
+
+    #formContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    #contacttitle {
+        font-size: 2em;
+        color: #307df6;
+        margin: 3vh 10vh;
+    }
+
+    #phoneNumberEmailAdress {
+        font-size: 1em;
+        margin: 3vh 10vh;
+    }
+
+    .RS {
+        display: flex;
+        justify-content: center;
+        margin: 3vh 10vh;
+        font-size: 2.3em;
+    }
+
+}
