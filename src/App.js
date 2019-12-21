@@ -1,17 +1,10 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import NavbarTest from "./components/navtest";
+import Navbar from "./components/navbar";
 import Header from "./components/head";
 import About from "./components/about";
 import Form from "./components/form";
 import Galery from "./components/galery"
 import Footer from "./components/footer";
-import './index.css'
 
 
 function App() {
@@ -24,10 +17,7 @@ function App() {
           <div className="container-fluid">
             <div className="col">
               <div className="col">
-                <NavbarTest />
-              </div>
-              <div className="col">
-              <Form />
+                <Navbar />
               </div>
             </div>
           </div>

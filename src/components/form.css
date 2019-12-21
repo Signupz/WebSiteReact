@@ -1,36 +1,35 @@
-form {
+.FlexContainer {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.2em;
 }
 
-#formContainer {
+.formContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    box-shadow: 5px 20px 25px rgb(134, 134, 134);
+    justify-content: space-around;
+    box-shadow: 5px 20px 25px rgba(134, 134, 134, 0.541);
+    border-radius: 10px;
+    width: 55vw;
+    height: 60vh;
 }
 
-#contacttitle {
-    font-size: 2em;
+.PhoneEmail {
+    font-size: 1.1em;
+}
+
+.contacttitle {
+    font-size: 1.9em;
     color: #307df6;
-    margin: 3vh 10vh;
     text-shadow: 0px 2px 3px rgba(161, 161, 161, 0.562);
-}
-
-#phoneNumberEmailAdress {
-    font-size: 2.3vw;
-    margin: 3vh 10vh;
-    text-shadow: 0px 2px 3px rgba(94, 94, 94, 0.562);
 }
 
 .RS {
     display: flex;
     justify-content: center;
     margin: 3vh 10vh;
-    font-size: 3em;
+    font-size: 2.3em;
     text-shadow: 0px 2px 3px rgba(94, 94, 94, 0.562);
 }
   
@@ -105,42 +104,7 @@ form {
 }
 
 @media only screen and (max-width:768px){
-
-    #formContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        top: 13vh;
-    }
-
-    #contacttitle {
-        font-size: 2em;
-        color: #307df6;
-        margin: 3vh 10vh;
-    }
-
-    #phoneNumberEmailAdress {
-        font-size: 1em;
-        margin: 3vh;
-    }
-
-    .RS {
-        display: flex;
-        justify-content: center;
-        margin: 3vh 10vh;
-        font-size: 2.3em;
-    }
 }
 
 @media only screen and (max-width:460px) {
-    #formContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        top: 13vh;
-        box-shadow: none;
-        transition: 0.3s;
-    }
 }
