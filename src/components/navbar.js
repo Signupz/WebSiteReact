@@ -18,6 +18,10 @@ export default function Navbar() {
   
     return (
       <Router>
+        <div className="header">
+            <h1 id="maintitle">Ludovic Mazet</h1>
+            <h3 id="secondtitle">Dev Web Junior</h3>
+        </div>
         <div className="navT">
           <NavbarContainer light expand="md">
             <NavbarToggler onClick={toggleNavbar} className="mr" />
