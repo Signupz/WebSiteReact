@@ -19,8 +19,8 @@ export default function Navbar() {
     return (
       <Router>
         <div className="header">
-            <h1 id="maintitle">Ludovic Mazet</h1>
-            <h3 id="secondtitle">Dev Web Junior</h3>
+        <Link to="/about"><h1 id="maintitle">Ludovic Mazet</h1>
+            <h3 id="secondtitle">Dev Web Junior</h3></Link>
         </div>
         <div className="navT">
           <NavbarContainer light expand="md">
