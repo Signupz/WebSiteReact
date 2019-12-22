@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
 import { Navbar as NavbarContainer, Nav, NavItem, NavLink, UncontrolledDropdown, Collapse, NavbarToggler, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './navbar.css';
-import About from './about'
-import Form from './form'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import Blog from './blog';
+import About from './about';
+import Contact from './contact';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 
 export default function Navbar() {
@@ -19,14 +15,14 @@ export default function Navbar() {
     return (
       <Router>
         <div className="header">
-        <Link to="/about"><h1 id="maintitle">Ludovic Mazet</h1>
-            <h3 id="secondtitle">Dev Web Junior</h3></Link>
-        </div>
-        <div className="navT">
+          <Link to="/about"><h1 className="maintitle">Ludovic Mazet</h1>
+              <h3 className="secondtitle">Dev Web Junior</h3></Link>
+          </div>
+        <div>
           <NavbarContainer light expand="md">
-            <NavbarToggler onClick={toggleNavbar} className="mr" />
+            <NavbarToggler onClick={toggleNavbar}/>
             <Collapse isOpen={!collapsed} navbar>
-              <Nav className="mr-auto" id="navBar" >
+              <Nav className="mr-auto">
               <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav>
                   Photographies <i className="fa fa-caret-down"/>
@@ -43,28 +39,24 @@ export default function Navbar() {
                 </UncontrolledDropdown>
 
                 <NavItem>
-                    <NavLink href="#">Blog</NavLink>
+                    <NavLink><Link to="/blog">Blog</Link></NavLink>
                 </NavItem>
-                
                 <NavItem>
                     <NavLink><Link to="/about">À propos</Link></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink><Link to="/form">Contact</Link></NavLink>
+                    <NavLink><Link to="/contact">Contact</Link></NavLink>
                 </NavItem>
               </Nav>
               </Collapse>
           </NavbarContainer>
 
-
-          <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/form">
-            <Form />
-          </Route>
+        <Switch>
+          <Route path="/blog" component={Blog} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
         </Switch>
+
         </div>
       </Router>
     );

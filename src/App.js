@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/navbar";
 import About from "./components/about";
-import Form from "./components/form";
+import Contact from "./components/contact";
 import Galery from "./components/galery"
 import Footer from "./components/footer";
 
