@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Navbar as NavbarContainer, Nav, NavItem, NavLink, UncontrolledDropdown, Collapse, NavbarToggler, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './navbar.css';
+import DDMT from './ddmt'
+import R12016 from './R12016'
+import Urban from './urban'
 import Blog from './blog';
 import About from './about';
 import Contact from './contact';
@@ -16,7 +19,8 @@ export default function Navbar() {
       <Router>
         <div className="header">
           <Link to="/about"><h1 className="maintitle">Ludovic Mazet</h1>
-              <h3 className="secondtitle">Dev Web Junior</h3></Link>
+              {/* <h3 className="secondtitle">Dev Web Junior</h3> */}
+              </Link>
           </div>
         <div>
           <NavbarContainer light expand="md">
@@ -28,13 +32,11 @@ export default function Navbar() {
                   Photographies <i className="fa fa-caret-down"/>
                   </DropdownToggle>
                   <DropdownMenu>
-                      <DropdownItem>Dark Dog Moto Tour 2012</DropdownItem>
+                      <DropdownItem><Link to="/DDMT">Dark Dog Moto Tour 2012</Link></DropdownItem>
                           <DropdownItem divider />
-                      <DropdownItem>Yamaha R1 2016</DropdownItem>
+                      <DropdownItem><Link to="/R12016">Yamaha R1 2016</Link></DropdownItem>
                           <DropdownItem divider />
-                      <DropdownItem>Triumph Daytona 2007</DropdownItem>
-                          <DropdownItem divider />
-                      <DropdownItem>Portraits</DropdownItem>
+                      <DropdownItem><Link to="/urban">Paysages urbains</Link></DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
 
@@ -52,6 +54,9 @@ export default function Navbar() {
           </NavbarContainer>
 
         <Switch>
+        <Route path="/urban" component={Urban} />
+          <Route path="/R12016" component={R12016} />
+          <Route path="/DDMT" component={DDMT} />
           <Route path="/blog" component={Blog} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
