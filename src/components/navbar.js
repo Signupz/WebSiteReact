@@ -18,7 +18,7 @@ export default function Navbar() {
     return (
       <Router>
         <div className="header">
-          <Link to="/about"><h1 className="maintitle">Ludovic Mazet</h1>
+          <Link to="/WebSiteReact"><h1 className="maintitle">Ludovic Mazet</h1>
               {/* <h3 className="secondtitle">Dev Web Junior</h3> */}
               </Link>
           </div>
@@ -54,7 +54,8 @@ export default function Navbar() {
           </NavbarContainer>
 
         <Switch>
-        <Route path="/urban" component={Urban} />
+          <Route path="/WebSiteReact/" component={Blog} />
+          <Route path="/urban" component={Urban} />
           <Route path="/R12016" component={R12016} />
           <Route path="/DDMT" component={DDMT} />
           <Route path="/blog" component={Blog} />
