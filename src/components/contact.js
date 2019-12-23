@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div className="FlexContainer" >
         <div className="contactContainer">
-            <h2 className="contacttitle">- Me contacter -</h2>
+            <h2 className="contacttitle">Me contacter</h2>
               <div className="PhoneEmail"><i className="fa fa-phone"></i> +33 6 12 65 72 23</div>
               <div className="PhoneEmail"><i className="fa fa-at"></i> ludovic.mazet@gmail.com</div>
                 <div className="RS">

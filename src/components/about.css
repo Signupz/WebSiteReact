@@ -29,5 +29,16 @@
   font-size: 17px;
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:768px) {
+  #aboutContainer {
+    margin-top: 9em;
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width:460px) {
+  #aboutContainer {
+    margin-top: 9em;
+    width: 90vw;
+  }
 }
