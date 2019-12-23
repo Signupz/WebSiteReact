@@ -6,182 +6,182 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 
 const photos = [
   {
-    src: require("../photos/ddmt/_MG_3232.jpg"),
+    src: require("../photos/ddmt/MG_3232.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3235.jpg"),
+    src: require("../photos/ddmt/MG_3235.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3238.jpg"),
+    src: require("../photos/ddmt/MG_3238.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3239.jpg"),
+    src: require("../photos/ddmt/MG_3239.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3241.jpg"),
+    src: require("../photos/ddmt/MG_3241.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3242.jpg"),
+    src: require("../photos/ddmt/MG_3242.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3247.jpg"),
+    src: require("../photos/ddmt/MG_3247.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3248.jpg"),
+    src: require("../photos/ddmt/MG_3248.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3254.jpg"),
+    src: require("../photos/ddmt/MG_3254.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3258.jpg"),
+    src: require("../photos/ddmt/MG_3258.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3262.jpg"),
+    src: require("../photos/ddmt/MG_3262.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3273.jpg"),
+    src: require("../photos/ddmt/MG_3273.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3285.jpg"),
+    src: require("../photos/ddmt/MG_3285.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3286.jpg"),
+    src: require("../photos/ddmt/MG_3286.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3287.jpg"),
+    src: require("../photos/ddmt/MG_3287.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3296.jpg"),
+    src: require("../photos/ddmt/MG_3296.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3303.jpg"),
+    src: require("../photos/ddmt/MG_3303.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3309.jpg"),
+    src: require("../photos/ddmt/MG_3309.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3310.jpg"),
+    src: require("../photos/ddmt/MG_3310.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3322.jpg"),
+    src: require("../photos/ddmt/MG_3322.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3323.jpg"),
+    src: require("../photos/ddmt/MG_3323.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3327.jpg"),
+    src: require("../photos/ddmt/MG_3327.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3329.jpg"),
+    src: require("../photos/ddmt/MG_3329.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3334.jpg"),
+    src: require("../photos/ddmt/MG_3334.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3336.jpg"),
+    src: require("../photos/ddmt/MG_3336.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3350.jpg"),
+    src: require("../photos/ddmt/MG_3350.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3353.jpg"),
+    src: require("../photos/ddmt/MG_3353.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3358.jpg"),
+    src: require("../photos/ddmt/MG_3358.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3360.jpg"),
+    src: require("../photos/ddmt/MG_3360.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3361.jpg"),
+    src: require("../photos/ddmt/MG_3361.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3363.jpg"),
+    src: require("../photos/ddmt/MG_3363.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3366.jpg"),
+    src: require("../photos/ddmt/MG_3366.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/ddmt/_MG_3367.jpg"),
+    src: require("../photos/ddmt/MG_3367.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3369.jpg"),
+    src: require("../photos/ddmt/MG_3369.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3379.jpg"),
+    src: require("../photos/ddmt/MG_3379.jpg"),
     width: 3,
     height: 4
   },
   {
-    src: require("../photos/ddmt/_MG_3381.jpg"),
+    src: require("../photos/ddmt/MG_3381.jpg"),
     width: 3,
     height: 4
   },

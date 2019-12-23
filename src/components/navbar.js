@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar as NavbarContainer, Nav, NavItem, NavLink, UncontrolledDropdown, Collapse, NavbarToggler, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './navbar.css';
-import DDMT from './ddmt'
+import DDMT from './DDMT'
 import R12016 from './R12016'
 import Urban from './urban'
 import Blog from './blog';

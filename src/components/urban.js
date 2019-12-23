@@ -6,12 +6,12 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 
 const photos = [
   {
-    src: require("../photos/urban/_MG_4418.jpg"),
+    src: require("../photos/urban/MG_4418.jpg"),
     width: 1300,
     height: 867
   },
   {
-    src: require("../photos/urban/_MG_7797-3.jpg"),
+    src: require("../photos/urban/MG_7797-3.jpg"),
     width: 800,
     height: 533
   },
@@ -21,42 +21,42 @@ const photos = [
     height: 533
   },
   {
-    src: require("../photos/urban/_MG_8361-2.jpg"),
+    src: require("../photos/urban/MG_8361-2.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/urban/_MG_8375.jpg"),
+    src: require("../photos/urban/MG_8375.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/urban/_MG_8810-2.jpg"),
+    src: require("../photos/urban/MG_8810-2.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/urban/_MG_8812-2.jpg"),
+    src: require("../photos/urban/MG_8812-2.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/urban/_MG_8818-2.jpg"),
+    src: require("../photos/urban/MG_8818-2.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/urban/_MG_8822.jpg"),
+    src: require("../photos/urban/MG_8822.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/urban/_MG_8866.jpg"),
+    src: require("../photos/urban/MG_8866.jpg"),
     width: 800,
     height: 533
   },
   {
-    src: require("../photos/urban/_MG_8871.jpg"),
+    src: require("../photos/urban/MG_8871.jpg"),
     width: 800,
     height: 533
   },
