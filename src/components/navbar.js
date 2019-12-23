@@ -54,7 +54,7 @@ export default function Navbar() {
           </NavbarContainer>
 
         <Switch>
-          <Route path="/WebSiteReact/" component={Blog} />
+          <Route path="/WebSiteReact" component={Blog} />
           <Route path="/urban" component={Urban} />
           <Route path="/R12016" component={R12016} />
           <Route path="/DDMT" component={DDMT} />
