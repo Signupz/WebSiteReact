@@ -8,3 +8,15 @@
 .UC {
     height: 60vh;
 }
+
+@media only screen and (max-width:768px){
+    .UC {
+        height: 90vw;
+    }
+}
+
+@media only screen and (max-width:460px) {
+    .UC {
+        height: 90vw;
+    }
+}

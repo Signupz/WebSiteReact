@@ -31,14 +31,15 @@
 
 @media only screen and (max-width:768px) {
   #aboutContainer {
-    margin-top: 9em;
+    margin-top: 3em;
     width: 70vw;
+    transition: .6s;
   }
 }
 
 @media only screen and (max-width:460px) {
   #aboutContainer {
-    margin-top: 9em;
+    margin-top: 3em;
     width: 90vw;
   }
 }
