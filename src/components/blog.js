@@ -15,11 +15,11 @@ export default function Blog() {
       //     <img className="UC" src={UC} />
       // </div>
     <div className="FlexContainer">
-      <Card>
-        <CardImg src={test} alt="TEST" />
+      <Card className="card">
+        <CardImg  src={test} alt="TEST" />
         <CardBody>
           <CardTitle>Essai R1 2015</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
+          <CardSubtitle></CardSubtitle>
           <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
           <Button>Button</Button>
         </CardBody>
