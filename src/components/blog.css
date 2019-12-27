@@ -5,6 +5,33 @@
     height: 70vh;
 }
 
-.UC {
+.card {
+    width: 25vw;
+    font-size: 1.3vw;
+}
+
+/* .UC {
     height: 60vh;
+} */
+
+@media only screen and (max-width:768px){
+    /* .UC {
+        height: 90vw;
+    } */
+
+    .cardimg {
+        width: 20vw;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:460px) {
+    /* .UC {
+        height: 90vw;
+    } */
+
+    .cardimg {
+        width: 20vw;
+        font-size: 17px;
+    }
 }
