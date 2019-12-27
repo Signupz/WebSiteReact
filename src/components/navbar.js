@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import { Navbar as NavbarContainer, Nav, NavItem, NavLink, UncontrolledDropdown, Collapse, NavbarToggler, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './navbar.css';
 import DDMT from './DDMT'
+import Daytona2007 from './daytona2007'
+import Thruxton from './thruxton'
 import R12016 from './R12016'
+import Ledenon from './Ledenon'
 import Urban from './urban'
 import Blog from './blog';
 import About from './about';
@@ -32,6 +35,12 @@ export default function Navbar() {
                   Photographies <i className="fa fa-caret-down"/>
                   </DropdownToggle>
                   <DropdownMenu>
+                      <DropdownItem><Link to="/daytona2007">Triumph Daytona 2007</Link></DropdownItem>
+                          <DropdownItem divider />
+                      <DropdownItem><Link to="/thruxton">Triumph Thruxton R</Link></DropdownItem>
+                          <DropdownItem divider />
+                          <DropdownItem><Link to="/ledenon">Roulage Ledenon 4G</Link></DropdownItem>
+                          <DropdownItem divider />
                       <DropdownItem><Link to="/DDMT">Dark Dog Moto Tour 2012</Link></DropdownItem>
                           <DropdownItem divider />
                       <DropdownItem><Link to="/R12016">Yamaha R1 2016</Link></DropdownItem>
@@ -55,7 +64,10 @@ export default function Navbar() {
 
         <Switch>
           <Route path="/WebSiteReact" component={Blog} />
+          <Route path="/daytona2007" component={Daytona2007} />
+          <Route path="/thruxton" component={Thruxton} />
           <Route path="/urban" component={Urban} />
+          <Route path="/ledenon" component={Ledenon} />
           <Route path="/R12016" component={R12016} />
           <Route path="/DDMT" component={DDMT} />
           <Route path="/blog" component={Blog} />
