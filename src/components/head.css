@@ -1,4 +1,4 @@
-#maintitle {
+/* .maintitle {
   color: #0052d6;
   font-family: arial;
   font-size: 3.2vw;
@@ -10,7 +10,7 @@
   
 }
 
-#secondtitle {
+.secondtitle {
   color: #0052d6;
   font-family: arial;
   font-size: 1.5vw;
@@ -45,4 +45,4 @@
     transition : 0.1s;
   } */
 
-}
+} */

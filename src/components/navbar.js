@@ -1,62 +1,93 @@
-import React, { useState } from 'react';
+import React, { Component,  useState } from 'react';
 import { Navbar as NavbarContainer, Nav, NavItem, NavLink, UncontrolledDropdown, Collapse, NavbarToggler, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './navbar.css';
 import DDMT from './DDMT'
 import Daytona2007 from './daytona2007'
 import Thruxton from './thruxton'
 import R12016 from './R12016'
-import Ledenon from './Ledenon'
+import Ledenon from './ledenon'
 import Urban from './urban'
 import Blog from './blog';
 import About from './about';
 import Contact from './contact';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Slider } from "react-burgers";
 
+export default class Navbar extends Component {
+  constructor() {
+    super();
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.closeNavbar = this.closeNavbar.bind(this);
+    this.state = {
+      collapsed : true
+    }
+  }
 
-export default function Navbar() {
-  const [collapsed, setCollapsed] = useState(true);
+  componentDidMount() {
+    window.addEventListener("keydown", e => {
+    if (e.key === "Escape" || e.key === "Esc") {
+        return this.this.closeNavbar();
+    }
+    });
+  }
 
-  const toggleNavbar = () => setCollapsed(!collapsed);
-  
+  toggleNavbar() {
+    this.setState({
+    collapsed: !this.state.collapsed
+    });
+  }
+
+  closeNavbar() {
+    if (this.state.collapsed == false ) {
+    this.this.toggleNavbar();
+    }
+    
+  }
+
+    render() {
     return (
       <Router>
         <div className="header">
-          <Link to="/WebSiteReact"><h1 className="maintitle">Ludovic Mazet</h1>
-              {/* <h3 className="secondtitle">Dev Web Junior</h3> */}
-              </Link>
-          </div>
+          <Link to="/WebSiteReact">
+              <h1 className="maintitle">Ludovic Mazet</h1>
+              <h3 className="secondtitle">Intégrateur Web Junior</h3>
+          </Link>
+          <NavbarToggler style={{backgroundColor: "rgba(0, 0, 0, 0)"}}>
+              <Slider color={'#fff'} onClick={this.toggleNavbar}/>
+          </NavbarToggler>
+        </div>
         <div>
           <NavbarContainer light expand="md">
-            <NavbarToggler onClick={toggleNavbar}/>
-            <Collapse isOpen={!collapsed} navbar>
+            
+            <Collapse className="DropDownMenu" isOpen={!this.state.collapsed} navbar>
               <Nav className="mr-auto">
               <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav>
                   Photographies <i className="fa fa-caret-down"/>
                   </DropdownToggle>
                   <DropdownMenu>
-                      <DropdownItem><Link to="/daytona2007">Triumph Daytona 2007</Link></DropdownItem>
+                      <DropdownItem onClick={this.toggleNavbar}><Link to="/daytona2007">Triumph Daytona 2007</Link></DropdownItem>
                           <DropdownItem divider />
-                      <DropdownItem><Link to="/thruxton">Triumph Thruxton R</Link></DropdownItem>
+                      <DropdownItem onClick={this.toggleNavbar}><Link to="/thruxton">Triumph Thruxton R</Link></DropdownItem>
                           <DropdownItem divider />
-                          <DropdownItem><Link to="/ledenon">Roulage Ledenon 4G</Link></DropdownItem>
+                          <DropdownItem onClick={this.toggleNavbar}><Link to="/ledenon">Roulage Ledenon 4G</Link></DropdownItem>
                           <DropdownItem divider />
-                      <DropdownItem><Link to="/DDMT">Dark Dog Moto Tour 2012</Link></DropdownItem>
+                      <DropdownItem onClick={this.toggleNavbar}><Link to="/DDMT">Dark Dog Moto Tour 2012</Link></DropdownItem>
                           <DropdownItem divider />
-                      <DropdownItem><Link to="/R12016">Yamaha R1 2016</Link></DropdownItem>
+                      <DropdownItem onClick={this.toggleNavbar}><Link to="/R12016">Yamaha R1 2016</Link></DropdownItem>
                           <DropdownItem divider />
-                      <DropdownItem><Link to="/urban">Paysages urbains</Link></DropdownItem>
+                      <DropdownItem onClick={this.toggleNavbar}><Link to="/urban">Paysages urbains</Link></DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
 
                 <NavItem>
-                    <NavLink><Link to="/blog">Blog</Link></NavLink>
+                    <NavLink onClick={this.toggleNavbar}><Link to="/blog">Blog</Link></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink><Link to="/about">À propos</Link></NavLink>
+                    <NavLink onClick={this.toggleNavbar}><Link to="/about">À propos</Link></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink><Link to="/contact">Contact</Link></NavLink>
+                    <NavLink onClick={this.toggleNavbar}><Link to="/contact">Contact</Link></NavLink>
                 </NavItem>
               </Nav>
               </Collapse>
@@ -79,3 +110,4 @@ export default function Navbar() {
       </Router>
     );
   }
+}
