@@ -46,7 +46,7 @@ export default class Navbar extends Component {
 
     render() {
     return (
-      <Router basename="/">
+      <Router>
         <div className="header">
           <Link to="/WebSiteReact">
               <h1 className="maintitle">Ludovic Mazet</h1>
@@ -87,7 +87,7 @@ export default class Navbar extends Component {
                     <NavLink onClick={this.toggleNavbar}><Link to="/about">À propos</Link></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink onClick={this.toggleNavbar}><Link to="/contact">Contact</Link></NavLink>
+                    <NavLink><Link to="/contact">Contact</Link></NavLink>
                 </NavItem>
               </Nav>
               </Collapse>
