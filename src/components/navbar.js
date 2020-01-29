@@ -46,7 +46,7 @@ export default class Navbar extends Component {
 
     render() {
     return (
-      <Router>
+      <Router basename="/">
         <div className="header">
           <Link to="/WebSiteReact">
               <h1 className="maintitle">Ludovic Mazet</h1>
