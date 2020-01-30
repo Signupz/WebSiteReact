@@ -48,7 +48,7 @@ export default class Navbar extends Component {
     return (
       <Router>
         <div className="header">
-          <Link exact to="/build">
+          <Link exact to="/" basename="/">
               <h1 className="maintitle">Ludovic Mazet</h1>
               <h3 className="secondtitle">Dev Web Junior</h3>
           </Link>
