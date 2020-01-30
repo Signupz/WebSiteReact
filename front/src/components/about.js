@@ -4,7 +4,7 @@ import self from "../img/self.jpg";
 
 export default function About() {
   return (
-    <div className="FlexContainer">
+    <div className="FlexContainerAbout">
       <div className="aboutContainer">
         <img className="shibuyapic" src={self} alt="Me at Shibuya"/>
         <p className="textabout">

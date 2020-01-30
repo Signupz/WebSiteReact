@@ -4,7 +4,7 @@ import {
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 import './blog.css'
-import UC from '../images/UnderConstruction.png'
+// import UC from '../img/UnderConstruction.png'
 import test from '../photos/ddmt/MG_3232.jpg'
 
 // https://reactstrap.github.io/components/card/
