@@ -10,7 +10,7 @@ import Urban from './urban'
 import Blog from './blog';
 import About from './about';
 import Contact from './contact';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Slider } from "react-burgers";
 
 export default class Navbar extends Component {
@@ -48,7 +48,7 @@ export default class Navbar extends Component {
     return (
       <Router>
         <div className="header">
-          <Link to="/WebSiteReact">
+          <Link exact to="/">
               <h1 className="maintitle">Ludovic Mazet</h1>
               <h3 className="secondtitle">Intégrateur Web Junior</h3>
           </Link>
