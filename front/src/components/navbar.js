@@ -66,25 +66,25 @@ export default class Navbar extends Component {
                   Photographies <i className="fa fa-caret-down"/>
                   </DropdownToggle>
                   <DropdownMenu>
-                      <DropdownItem onClick={this.toggleNavbar}><Link to="/daytona2007">Triumph Daytona 2007</Link></DropdownItem>
+                      <DropdownItem><Link to="/daytona2007">Triumph Daytona 2007</Link></DropdownItem>
                           <DropdownItem divider />
-                      <DropdownItem onClick={this.toggleNavbar}><Link to="/thruxton">Triumph Thruxton R</Link></DropdownItem>
+                      <DropdownItem><Link to="/thruxton">Triumph Thruxton R</Link></DropdownItem>
                           <DropdownItem divider />
-                          <DropdownItem onClick={this.toggleNavbar}><Link to="/ledenon">Roulage Ledenon 4G</Link></DropdownItem>
+                          <DropdownItem><Link to="/ledenon">Roulage Ledenon 4G</Link></DropdownItem>
                           <DropdownItem divider />
-                      <DropdownItem onClick={this.toggleNavbar}><Link to="/DDMT">Dark Dog Moto Tour 2012</Link></DropdownItem>
+                      <DropdownItem><Link to="/DDMT">Dark Dog Moto Tour 2012</Link></DropdownItem>
                           <DropdownItem divider />
-                      <DropdownItem onClick={this.toggleNavbar}><Link to="/R12016">Yamaha R1 2016</Link></DropdownItem>
+                      <DropdownItem><Link to="/R12016">Yamaha R1 2016</Link></DropdownItem>
                           <DropdownItem divider />
-                      <DropdownItem onClick={this.toggleNavbar}><Link to="/urban">Paysages urbains</Link></DropdownItem>
+                      <DropdownItem><Link to="/urban">Paysages urbains</Link></DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
 
                 <NavItem>
-                    <NavLink onClick={this.toggleNavbar}><Link to="/blog">Blog</Link></NavLink>
+                    <NavLink><Link to="/blog">Blog</Link></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink onClick={this.toggleNavbar}><Link to="/about">À propos</Link></NavLink>
+                    <NavLink><Link to="/about">À propos</Link></NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink><Link to="/contact">Contact</Link></NavLink>
