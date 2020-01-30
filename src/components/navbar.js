@@ -48,9 +48,9 @@ export default class Navbar extends Component {
     return (
       <Router>
         <div className="header">
-          <Link exact to="/">
+          <Link exact to="/build">
               <h1 className="maintitle">Ludovic Mazet</h1>
-              <h3 className="secondtitle">Intégrateur Web Junior</h3>
+              <h3 className="secondtitle">Dev Web Junior</h3>
           </Link>
           <NavbarToggler style={{backgroundColor: "rgba(0, 0, 0, 0)"}}>
               <Slider color={'#fff'} onClick={this.toggleNavbar}/>
